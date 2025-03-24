@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <label for="">Digite seu e-mail</label>
+  <br>
+  <input id="nome1" type="text" placeholder="e-mail"> 
+  <button onclick="exibirDadoDigitado('nome1')">Click</button>
+  <br>
+
+  <label for="">Digite seu e-mail</label>
+  <br>
+  <input id="nome2" type="text" placeholder="e-mail"> 
+  <button onclick="exibirDadoDigitado('nome2')">Click</button>
+  <br>
+
+  <label for="">Digite seu e-mail</label>
+  <br>
+  <input id="nome3" type="text" placeholder="e-mail"> 
+  <button onclick="exibirDadoDigitado('nome3')">Click</button>
+
+  <script>
+    function exibirDadoDigitado(id) {
+      var nome = document.getElementById(id).value;
+      alert(nome);
+    }
+  </script>
+</body>
+</html>
