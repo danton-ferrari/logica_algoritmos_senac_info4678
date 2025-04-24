@@ -1,6 +1,6 @@
-function aluguel() {
-    var [estilo, dias, kms] = [document.getElementById("estilo").value, Number(document.getElementById("dias").value), Number(document.getElementById("kms").value)];
-    if (estilo == "luxo") {
-        resultado = kms <= 200 ? alert(`O valor do aluguel do veículo será de: R$${((dias*150)+(kms*0.3)).toFixed(2)}`) : alert(`O valor do aluguel do veículo será de: R$${((dias*150)+(kms*0.25)).toFixed(2)}`);
-    } else { resultado = kms <= 100 ? alert(`O valor do aluguel do veículo será de: R$${((dias*90)+(kms*0.20)).toFixed(2)}`) : alert(`O valor do aluguel do veículo será de: R$${((dias*90)+(kms*0.10)).toFixed(2)}`); }
+function salarioAtualizado() {
+    var [salario, genero, tempo] = [Number(document.getElementById("salario").value), document.getElementById("genero").value, Number(document.getElementById("tempo").value)];
+    if (genero == "mulher") {
+        resultado = tempo < 15 ? alert(`O salário novo será de: R$${(salario*1.05).toFixed(2)}`) : tempo >= 15 && tempo < 20 ? alert(`O salário novo será de: R$${(salario*1.12).toFixed(2)}`) : alert(`O salário novo será de: R$${(salario*1.23).toFixed(2)}`);
+    } else { resultado = tempo < 20 ? alert(`O salário novo será de: R$${(salario*1.03).toFixed(2)}`) : tempo >= 20 && tempo < 30 ? alert(`O salário novo será de: R$${(salario*1.13).toFixed(2)}`) : alert(`O salário novo será de: R$${(salario*1.25).toFixed(2)}`); }
 }
